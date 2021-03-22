@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Roboto';
     src: url('/src/fonts/Roboto-Light.eot');
-    src: url('/src/fontsRoboto-Light.eot?#iefix') format('embedded-opentype'),
+    src: url('/src/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
         url('/src/fonts/Roboto-Light.woff') format('woff'),
         url('/src/fonts/Roboto-Light.ttf') format('truetype');
     font-weight: 200;

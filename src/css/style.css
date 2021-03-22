@@ -1,4 +1,10 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8,7 +14,21 @@ header {
 }
 
 .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 70px;
     margin: 0;
     list-style-type: none;
+}
+
+.menu .menu_item .menu_link {
+    font-weight: 200;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.menu .menu_link:hover {
+    color: #e6bcbc;
+    text-decoration: none;
 }
