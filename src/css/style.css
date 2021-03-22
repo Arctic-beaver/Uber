@@ -1,0 +1,14 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    min-height: 50px;
+    background: #212121;
+}
+
+.menu {
+    padding: 10px 70px;
+    margin: 0;
+    list-style-type: none;
+}
