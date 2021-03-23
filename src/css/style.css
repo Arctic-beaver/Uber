@@ -66,6 +66,7 @@ a:hover {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: right;
+    line-height: 25px;
 }
 
 .call_text {
@@ -75,4 +76,81 @@ a:hover {
     text-align: right;
     color: #FFFFFF;
     opacity: 0.6;
+}
+
+.call_button,
+.promo_button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 172px;
+    height: 46px;
+
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+
+
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.call_button:hover,
+.promo_button:hover {
+    background: linear-gradient(0deg, #1994b9 0%, #1884a1 100%);
+}
+
+.promo {
+    min-height: ;
+    background: url('/src/img/bg/main_bg.png') center center/cover no-repeat;
+}
+
+.promo_uber {
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 150px;
+    margin-bottom: 0;
+}
+
+.promo_car {
+    margin-top: 13px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.promo_text {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.promo_button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 115px;
+    width: 259px;
+    height: 63px;
+    font-size: 18px;
+    margin-bottom: 186px;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+}
+
+.header {
+    position: relative;
 }
