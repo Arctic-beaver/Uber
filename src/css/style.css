@@ -105,7 +105,7 @@ a:hover {
 }
 
 .promo {
-    min-height: ;
+    min-height: 849;
     background: url('/src/img/bg/main_bg.png') center center/cover no-repeat;
 }
 
@@ -153,4 +153,73 @@ a:hover {
 
 .header {
     position: relative;
+}
+
+.start {
+    min-height: 849px;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+}
+
+.label {
+    display: block;
+    margin: 0 auto;
+
+    margin-top: 18px;
+    margin-bottom: 32px;
+
+    width: 115px;
+    height: 27px;
+    background: #000000;
+    padding-top: 5px;
+    font-weight: 300;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.title_block {
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.start .container .row .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+
+.start .container .row .reasons_block .start_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.start .container .row .start_text {
+    width: 343px;
+}
+
+.start .container .row .start_subheader {
+    font-weight: 300;
+    font-size: 17px;
+    color: #1EACC7;
+}
+
+.start .container .row .start_descr {
+    font-weight: 200;
+    font-size: 15px;
+    color: black;
 }
