@@ -7,9 +7,16 @@
 html
 	font-family: 'Roboto', sans-serif
 
+header 
+    position: relative
+    height: 50px
+
 nav
-	min-height: 50px
-	background: #212121
+	background-color: #212121
+	position: fixed
+	height: 50px
+	width: 100%
+	z-index: 2
 
 .menu
 	display: flex
@@ -22,6 +29,7 @@ nav
 		font-weight: 200
 		font-size: 15px
 		color: #FFFFFF
+		cursor: pointer
 
 	.menu_link:hover
 		color: #e6bcbc
@@ -36,6 +44,8 @@ a:hover
 	padding-right: 32px
 
 .subheader
+	position: absolute
+	top: 50px
 	height: 87px
 	background-color: rgba(0, 0, 0, 0.6)
 
@@ -81,6 +91,7 @@ a:hover
 	font-size: 14px
 	text-align: center
 	text-transform: uppercase
+	cursor: pointer
 	color: #FFFFFF
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 
@@ -191,21 +202,54 @@ a:hover
 		color: black
 
 .descr_block
+	padding-top: 15px
 	font-weight: 300;
 	font-size: 17px;
 	text-align: center;
 	color: #222222;
 
 .mobile
-	min-height: 865
+	padding-top: 48px
+	padding-bottom: 80px
+	min-height: 865px
 	background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
-	_label 
-		padding-top: 48px
-	_title
-		padding-top: 33px
-		padding-bottom: 5px
-
-
-	
-
-
+	&_item
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-top: 30px
+		padding-top: 92px
+		position: relative
+		&_1
+			background: url('../img/cards/card-1.png') center (center / cover) no-repeat
+		&_2
+			background: url('../img/cards/card-2.png') center (center / cover) no-repeat
+		&_3
+			background: url('../img/cards/card-3.png') center (center / cover) no-repeat
+		&_4
+			background: url('../img/cards/card-4.png') center (center / cover) no-repeat
+		&_5
+			background: url('../img/cards/card-5.png') center (center / cover) no-repeat
+		&_6
+			background: url('../img/cards/card-6.png') center (center / cover) no-repeat
+		&_subtitle
+			font-weight: 300
+			font-size: 24px
+			text-align: center
+			text-transform: uppercase
+			color: #FFFFFF
+		&_plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			width: 29px
+			height: 29px
+			background: #000000
+			margin: 0 auto
+			border-radius: 100%
+			padding: 6px
+			cursor: pointer
