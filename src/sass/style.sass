@@ -1,3 +1,6 @@
+$blue_color: #1EACC7
+$pink_color: #FF5656
+
 *
 	box-sizing: border-box
 	margin: 0
@@ -84,7 +87,7 @@ a:hover
 	margin-bottom: 20px
 	width: 172px
 	height: 46px
-	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+	background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
 	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
 	border-radius: 6px
 	font-weight: 300
@@ -150,7 +153,6 @@ a:hover
 .label
 	display: block
 	margin: 0 auto
-	margin-top: 18px
 	margin-bottom: 32px
 	width: 115px
 	height: 27px
@@ -185,7 +187,7 @@ a:hover
 		margin-right: 26px
 		width: 113px
 		height: 113px
-		background-color: #1eacc7
+		background-color: $blue_color
 		border-radius: 100%
 
 	.start_text
@@ -194,7 +196,7 @@ a:hover
 	.start_subheader
 		font-weight: 300
 		font-size: 17px
-		color: #1EACC7
+		color: $blue_color
 
 	.start_descr
 		ont-weight: 200
@@ -273,3 +275,28 @@ a:hover
 		font-size: 17px;
 		text-align: center;
 		color: #222222;
+
+.conditions
+	min-height: 917px
+	padding: 66px 0 87px 0
+
+.city
+	padding: 50px 0 50px 0
+	min-height: 720px
+	position: relative
+	background: url('../img/bg/world_bg_ver-2.png') center (center / cover) no-repeat
+	.label
+		width: 75px
+		height: 25px
+		background-color: #FFFFFF
+		color: #070716
+	.title_block
+		color: #FFFFFF
+	.descr_block
+		color: #FFFFFF
+	&_watch
+		color: #1FBAD6
+		position: absolute
+		bottom: 46px
+		left: 50%
+		transform: translateX(-50%)
