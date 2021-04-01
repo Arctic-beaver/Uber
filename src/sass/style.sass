@@ -47,6 +47,7 @@ a:hover
 	padding-right: 32px
 
 .subheader
+	z-index: 5
 	position: absolute
 	top: 50px
 	height: 87px
@@ -102,6 +103,7 @@ a:hover
 	background: linear-gradient(0deg, #1994b9 0%, #1884a1 100%)
 
 .promo
+	z-index: 1
 	min-height: 849
 	background: url('../img/bg/main_bg.png') center (center / cover) no-repeat
 
@@ -255,7 +257,21 @@ a:hover
 			border-radius: 100%
 			padding: 6px
 			cursor: pointer
-
+			&::before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $blue_color
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $blue_color
 .car
 	padding: 60px 0 138px 0
 	background: url('../img/bg/car_bg.png') center (center / cover) no-repeat
@@ -300,3 +316,6 @@ a:hover
 		bottom: 46px
 		left: 50%
 		transform: translateX(-50%)
+
+footer
+	min-height: 145px
