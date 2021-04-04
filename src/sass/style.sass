@@ -371,42 +371,57 @@ a:hover
 		display: block
 		margin: 0 auto
 		margin-bottom: 33px
-	&_icons
-		position: absolute
-		left: 0
-	&_content
-		max-width: 360px
-		display: block
-		margin: 0 auto
-		&_line-1
-			display: flex
-			justify-content: space-around
-			align-items: center
-			margin-bottom: 20px
-			&_link
-				font-weight: 200;
-				font-size: 15px;
-				text-transform: uppercase;
-				color: #070716;
-		&_line-2
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&_icons
+			width: 156px
 			display: flex
 			justify-content: space-between
 			align-items: center
-			margin-bottom: 20px
-			&_link
-				font-weight: 200;
-				font-size: 11px;
-				text-transform: uppercase;
-				color: #999999;
-		&_line-3
-			&_link
-				display: block
-				margin: 0 auto
-				font-weight: 200;
-				font-size: 11px;
-				text-align: center;
-				text-transform: uppercase;
-				color: #1FBAD6;
-	&_links
-		position: absolute
-		right: 0
+			&_facebook,&_twitter,&_in,&_inst
+				border-radius: 100%
+				display: flex
+				justify-content: space-around
+				align-items: center
+				width: 35px
+				height: 35px
+				background-color: #070716
+				color: #fff
+		&_content
+			width: 400px
+			margin-left: 136px
+			&_line-1
+				display: flex
+				justify-content: space-around
+				align-items: center
+				margin-bottom: 20px
+				&_link
+					font-weight: 200;
+					font-size: 15px;
+					text-transform: uppercase;
+					color: #070716;
+			&_line-2
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 20px
+				&_link
+					font-weight: 200;
+					font-size: 11px;
+					text-transform: uppercase;
+					color: #999999;
+			&_line-3
+				&_link
+					display: block
+					margin: 0 auto
+					font-weight: 200;
+					font-size: 11px;
+					text-align: center;
+					text-transform: uppercase;
+					color: #1FBAD6;
+		&_links
+			&_img
+				width: 296px
+				height: 27px
