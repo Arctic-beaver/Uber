@@ -263,6 +263,7 @@ a:hover
 				width: 14px
 				height: 2px
 				background-color: $blue_color
+				transition: 0.3s all
 			&::after
 				content: ''
 				position: absolute
@@ -272,6 +273,11 @@ a:hover
 				width: 2px
 				height: 14px
 				background-color: $blue_color
+				transition: 0.3s all
+			&:hover
+				&::before, &::after
+					background-color: $pink_color
+
 .car
 	padding: 60px 0 138px 0
 	background: url('../img/bg/car_bg.png') center (center / cover) no-repeat
@@ -287,14 +293,52 @@ a:hover
 	.descr_block
 		color: #FFFFFF
 	&_underimage
-		font-weight: 200;
-		font-size: 17px;
-		text-align: center;
-		color: #222222;
+		font-weight: 200
+		font-size: 17px
+		text-align: center
+		color: #222222
 
 .conditions
-	min-height: 917px
 	padding: 66px 0 87px 0
+	&_block
+		max-width: 478px
+		&_title
+			font-weight: 300
+			font-size: 22px
+			color: #1CA8C3
+			margin-top: 37px
+			margin-bottom: 5px
+		&_list
+			list-style-type: none
+			padding-left: 50px
+			li
+				margin-bottom: 3px
+				position: relative
+				font-weight: 200
+				font-size: 17px
+				color: #222222
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					left: -39px
+					width: 21px
+					height: 20px
+					vertical-align: middle
+					background: url('../img/marks/mark_blue.png') center (center / cover) no-repeat
+
+		&_descr
+			font-weight: 200
+			font-size: 17px
+			color: #1CA8C3
+			margin-bottom: 30px
+		.my_red
+			color: #FF5656
+	.chcolor
+		.conditions_block_list
+			li
+				&::before
+					background: url('../img/marks/mark_red.png') center (center / cover) no-repeat
 
 .city
 	padding: 50px 0 50px 0
@@ -317,5 +361,52 @@ a:hover
 		left: 50%
 		transform: translateX(-50%)
 
-footer
+.footer
 	min-height: 145px
+	padding: 11px 21px 30px 23px
+	&_line
+		width: 300px
+		height: 7px
+		background-color: #1FBAD6
+		display: block
+		margin: 0 auto
+		margin-bottom: 33px
+	&_icons
+		position: absolute
+		left: 0
+	&_content
+		max-width: 360px
+		display: block
+		margin: 0 auto
+		&_line-1
+			display: flex
+			justify-content: space-around
+			align-items: center
+			margin-bottom: 20px
+			&_link
+				font-weight: 200;
+				font-size: 15px;
+				text-transform: uppercase;
+				color: #070716;
+		&_line-2
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 20px
+			&_link
+				font-weight: 200;
+				font-size: 11px;
+				text-transform: uppercase;
+				color: #999999;
+		&_line-3
+			&_link
+				display: block
+				margin: 0 auto
+				font-weight: 200;
+				font-size: 11px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #1FBAD6;
+	&_links
+		position: absolute
+		right: 0
